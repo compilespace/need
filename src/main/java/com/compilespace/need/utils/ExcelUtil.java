@@ -1,13 +1,3 @@
-/**
- * Copyright (C), 2018-2019, XXX有限公司
- * FileName: ExcelUtil
- * Author:   Admin
- * Date:     2019/3/15 13:16
- * Description: Excel表格上传下载工具类
- * History:
- * <author>          <time>          <version>          <desc>
- * 作者姓名           修改时间           版本号              描述
- */
 package com.compilespace.need.utils;
 
 import org.apache.poi.ss.usermodel.Cell;
@@ -26,7 +16,6 @@ import java.util.List;
  * 〈Excel表格上传下载工具类〉
  *
  * @author Admin
- * @create 2019/3/15
  * @since 1.0.0
  */
 public class ExcelUtil {
@@ -76,7 +65,6 @@ public class ExcelUtil {
      *
      * @param uploadFile 要上传的Excel文件
      * @return List<String                                                               [                                                               ]> 封装好的实体类数据,只要遍历将数组设置进实体类中即可
-     * @throws Exception
      */
     public List<String[]> uploadExcel(MultipartFile uploadFile) throws Exception {
         //准备容器

@@ -1,13 +1,3 @@
-/**
- * Copyright (C), 2018-2019, XXX有限公司
- * FileName: AnalysisObject
- * Author:   Admin
- * Date:     2019/3/15 14:07
- * Description: 解析复杂对象工具类
- * History:
- * <author>          <time>          <version>          <desc>
- * 作者姓名           修改时间           版本号              描述
- */
 package com.compilespace.need.utils;
 
 import org.springframework.beans.BeanUtils;
@@ -25,7 +15,6 @@ import java.util.Map;
  * 〈解析复杂对象工具类,比如List<Object>〉
  *
  * @author Admin
- * @create 2019/3/15
  * @since 1.0.0
  */
 public class AnalysisObjectUtil {
