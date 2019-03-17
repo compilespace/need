@@ -14,7 +14,17 @@ import java.util.List;
 /**
  * 〈一句话功能简述〉<br>
  * 〈Excel表格上传下载工具类〉
- *
+ *  采用的是apache.poi
+ *      <dependency>
+ * 			<groupId>org.apache.poi</groupId>
+ * 			<artifactId>poi</artifactId>
+ * 			<version>3.11</version>
+ * 		</dependency>
+ * 		<dependency>
+ * 			<groupId>org.apache.poi</groupId>
+ * 			<artifactId>poi-ooxml</artifactId>
+ * 			<version>3.9</version>
+ * 		</dependency>
  * @author Admin
  * @since 1.0.0
  */
@@ -22,6 +32,16 @@ public class ExcelUtil {
 
     /**
      * 从数据库中导出数据到Excel表格(下载)
+     *     在调用此方法结束后,要以流的方式输出
+     *     // 输出Excel文件
+     * 		ServletOutputStream outputStream = response.getOutputStream();
+     * 		response.reset();
+     * 		//为excel文件命名
+     * 		response.setHeader("Content-disposition", "attachment; filename=details.xls");
+     * 		response.setContentType("application/msexcel");
+     * 		workbook.write(outputStream);
+     * 		outputStream.flush();
+     * 		outputStream.close();
      * @param heads Excel表头信息
      * @param datas 将各个实体类取值封装到String数组里
      * @return SXSSFWorkbook
