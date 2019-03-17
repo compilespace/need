@@ -32,7 +32,8 @@ public class ExcelUtil {
 
     /**
      * 从数据库中导出数据到Excel表格(下载)
-     *     在调用此方法结束后,要以流的方式输出
+     *
+     *     在调用此方法结束后,要以流的方式输出,注意
      *     // 输出Excel文件
      * 		ServletOutputStream outputStream = response.getOutputStream();
      * 		response.reset();
